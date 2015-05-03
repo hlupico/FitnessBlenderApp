@@ -24,12 +24,6 @@
             android:label="YouTube Meu" >
         </activity>
 
-        <activity
-            android:name=".StandAloneActivity"
-            android:label="StandAloneActivity Menu" >
-        </activity>
-
-
 
     </application>
 

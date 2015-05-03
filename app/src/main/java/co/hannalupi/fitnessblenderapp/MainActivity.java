@@ -7,20 +7,25 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
 
-    Button btnPlay;
-    Button btnSubMenu;
+    TextView textView;
+    Button btnCore;
+    Button btnLegs;
+    Button btnUpperBody;
+    Button btnTotalBody;
+    Button btnSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnPlay = (Button) findViewById(R.id.btnPlay);
-        btnPlay.setOnClickListener(new View.OnClickListener() {
+        btnSearch = (Button) findViewById(R.id.btnSearch);
+        btnSearch.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -29,15 +34,6 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        btnSubMenu = (Button) findViewById(R.id.btnSubMenu);
-        btnSubMenu.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, StandAloneActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
 

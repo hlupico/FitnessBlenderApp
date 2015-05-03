@@ -17,7 +17,6 @@ import com.google.android.youtube.player.YouTubePlayerView;
 public class YouTubeActivity extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
     public static final String GOOGLE_API_KEY = "AIzaSyBdJ1zGyVe6RmNLcsgO8lggZNDn-AA8M88";
-    public static final String YOUTUBE_VIDEO_ID = "IR31lyaxJE4";
 
 
     protected void onCreate(Bundle savedInstanceState){
@@ -41,7 +40,7 @@ public class YouTubeActivity extends YouTubeBaseActivity implements YouTubePlaye
 
         //play video
         if(!wasRestored){
-            player.cueVideo(YOUTUBE_VIDEO_ID);
+            player.cueVideo(getIntent().getStringExtra("VIDEO_ID"));
         }
     }
 

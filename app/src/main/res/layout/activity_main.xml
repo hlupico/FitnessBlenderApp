@@ -6,22 +6,59 @@
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Play Video"
-        android:id="@+id/btnPlay"
-        android:layout_marginTop="56dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="Select a Fitness Blender Workout Category"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:id="@+id/textView" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SubMenu"
-        android:id="@+id/btnSubMenu"
-        android:layout_below="@+id/btnPlay"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp" />
+        android:text="Core"
+        android:id="@+id/btnCore"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Legs"
+        android:id="@+id/btnLegs"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnCore"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upper Body"
+        android:id="@+id/btnUpperBody"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnLegs"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Body"
+        android:id="@+id/btnTotalBody"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnUpperBody"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/btnSearch"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btnTotalBody"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
